@@ -1,135 +1,167 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                                                                          ║
-║    ██████╗██╗  ██╗ █████╗ ██████╗  ██████╗                              ║
-║    ╚════██╗██║  ██║██╔══██╗██╔══██╗██╔═████╗                            ║
-║     █████╔╝███████║███████║██║  ██║██║██╔██║                            ║
-║    ██╔═══╝ ██╔══██║██╔══██║██║  ██║████╔╝██║                            ║
-║    ███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝                            ║
-║    ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝                            ║
-║                                                                          ║
-║         zero-knowledge privacy for autonomous AI agents                  ║
-║                        on Base L2                                        ║
-║                                                                          ║
-╚══════════════════════════════════════════════════════════════════════════╝
+ ____  ____  ____  ____  ____  ____  ____  ____  ____  ____  ____  ____
+|    ||    ||    ||    ||    ||    ||    ||    ||    ||    ||    ||    |
+| Z  || H  || A  || D  || 0  ||    || P  || R  || O  || T  || O  || C  |
+|____||____||____||____||____||____||____||____||____||____||____||____|
+ ____  ____  ____
+|    ||    ||    |
+| O  || L  ||    |
+|____||____||____|
+```
+
+```
+ ______     __  __     ______     _____     ______    
+/\___  \   /\ \_\ \   /\  __ \   /\  __-.  /\  __ \   
+\/_/  /__  \ \  __ \  \ \  __ \  \ \ \/\ \ \ \ \/\ \  
+  /\_____\  \ \_\ \_\  \ \_\ \_\  \ \____-  \ \_____\ 
+  \/_____/   \/_/\/_/   \/_/\/_/   \/____/   \/_____/ 
+```
+
+```
+ ·▸ zero-knowledge privacy for autonomous AI agents on Base L2 ◂·
 ```
 
 </div>
 
-```bash
-zhad0@protocol:~$ whoami
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  whoami                                          ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║    name    : zhad0                                                   ║
+║    role    : privacy infrastructure for the agentic web              ║
+║    network : Base L2 (chain 8453)                                    ║
+║    domain  : https://zhad0.io                                        ║
+║                                                                      ║
+║    AI agents trade, vote, lend, bridge on-chain.                     ║
+║    Every intent visible. Every strategy exposed.                     ║
+║    MEV bots drain them before execution lands.                       ║
+║                                                                      ║
+║    ZHAD0 fixes this.                                                 ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ```
-zhad0
-privacy infrastructure for the agentic web
-building on Base — encrypting the machine economy
-```
-
-```bash
-zhad0@protocol:~$ cat mission.txt
-```
-
-```
-AI agents trade, vote, lend, and bridge on-chain.
-Every intent is visible. Every strategy is exposed.
-MEV bots drain them before execution lands.
-
-ZHAD0 fixes this.
-
-AES-256-GCM encryption shields intent payloads.
-RISC Zero ZK proofs verify validity without revealing content.
-Ghost Relayers execute on Base with zero leakage.
-
-The agent acts. The chain settles. Nobody watches.
-```
-
-```bash
-zhad0@protocol:~$ ls -la repos/
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  cat architecture.txt                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   AI AGENT                                                           ║
+║       │                                                              ║
+║       │  raw intent                                                  ║
+║       ▼                                                              ║
+║  ┌─────────────────────────────────────────┐                         ║
+║  │  @zhad0/sdk                             │                         ║
+║  │                                         │                         ║
+║  │  [1] AES-256-GCM encrypt   ← LIVE ●    │                         ║
+║  │  [2] RISC Zero ZK proof    ← pending ○ │                         ║
+║  │  [3] Ghost Relay submit    ← pending ○ │                         ║
+║  └─────────────────────────────────────────┘                         ║
+║       │                                                              ║
+║       │  encrypted + proven                                          ║
+║       ▼                                                              ║
+║   BASE L2  ░░░░░░░░░░░░░░░░  zero leakage                           ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ```
-drwxr-xr-x  zhad0-sdk          TypeScript SDK + CLI · @zhad0/sdk
-drwxr-xr-x  zhad0-app          React web app · zhad0.io
-drwxr-xr-x  zhad0-api          Express 5 + Drizzle ORM API server
-drwxr-xr-x  zhad0-eliza        ElizaOS plugin · @zhad0/eliza-plugin
-drwxr-xr-x  zhad0-virtuals     Virtuals Protocol adapter · @zhad0/virtuals-adapter
-drwxr-xr-x  zhad0-docs         Whitepaper · SDK ref · API ref · Governance
-```
-
-```bash
-zhad0@protocol:~$ zhad0 status --verbose
-```
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  ZHAD0 Protocol — Status                                         │
-├──────────────────────────────────┬──────────────────────────────┤
-│  AES-256-GCM encryption          │  ● LIVE                      │
-│  Intent hash fingerprinting      │  ● LIVE                      │
-│  ElizaOS plugin                  │  ● LIVE                      │
-│  Virtuals Protocol adapter       │  ● LIVE                      │
-│  REST API (Base Sepolia)         │  ● LIVE                      │
-│  ZK proofs (RISC Zero)           │  ○ mainnet pending           │
-│  Ghost Relay network             │  ○ mainnet pending           │
-│  Base L2 execution               │  ○ mainnet pending           │
-└──────────────────────────────────┴──────────────────────────────┘
-```
-
-```bash
-zhad0@protocol:~$ npm install @zhad0/sdk
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  ls -la repos/                                   ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  drwxr-xr-x  zhad0-sdk         @zhad0/sdk · TypeScript SDK + CLI    ║
+║  drwxr-xr-x  zhad0-app         React 18 + Vite + Wagmi · zhad0.io   ║
+║  drwxr-xr-x  zhad0-api         Express 5 + Drizzle ORM + PostgreSQL ║
+║  drwxr-xr-x  zhad0-eliza       @zhad0/eliza-plugin · ElizaOS        ║
+║  drwxr-xr-x  zhad0-virtuals    @zhad0/virtuals-adapter · Virtuals   ║
+║  drwxr-xr-x  zhad0-docs        Whitepaper · SDK ref · Governance    ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ```
-added 1 package in 0.4s
-```
-
-```bash
-zhad0@protocol:~$ node -e "
-  const { Zhad0Client } = require('@zhad0/sdk');
-  const client = new Zhad0Client();
-
-  client.submitIntent({
-    action:   'SWAP',
-    tokenIn:  '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
-    tokenOut: '0x4200000000000000000000000000000000000006',
-    amountIn: '1000000000',
-  }).then(r => console.log('intent:', r.intentHash));
-"
-```
-
-```
-intent: 0x7f3a9c2b1e84d06f5a8c3b7e1d4f9a2c6b8e3d7a1f4c9e2b5d8a3f6c1e7b4d9
-```
-
-```bash
-zhad0@protocol:~$ cat stack.json
-```
-
-```json
-{
-  "language":   "TypeScript",
-  "runtime":    "Node.js + Web Crypto API",
-  "crypto":     ["AES-256-GCM", "RISC Zero (WASM)"],
-  "chain":      "Base L2 (chain 8453)",
-  "frontend":   ["React 18", "Vite", "Wagmi", "shadcn/ui"],
-  "backend":    ["Express 5", "Drizzle ORM", "PostgreSQL", "Pino"],
-  "frameworks": ["ElizaOS", "Virtuals Protocol", "Coinbase AgentKit"]
-}
-```
-
-```bash
-zhad0@protocol:~$ curl https://zhad0.io
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  zhad0 status                                    ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   ● LIVE    AES-256-GCM encryption                                   ║
+║   ● LIVE    Intent hash fingerprinting (SHA-256)                     ║
+║   ● LIVE    ElizaOS plugin    (@zhad0/eliza-plugin)                  ║
+║   ● LIVE    Virtuals adapter  (@zhad0/virtuals-adapter)              ║
+║   ● LIVE    REST API          (Base Sepolia)                         ║
+║   ○ SOON    ZK proofs         (RISC Zero V1.2)                       ║
+║   ○ SOON    Ghost Relay       (Base mainnet)                         ║
+║   ○ SOON    On-chain execution                                       ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ```
-→  https://zhad0.io
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  npm install @zhad0/sdk && node -                ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  > added 1 package in 412ms                                          ║
+║                                                                      ║
+║  const { Zhad0Client } = require('@zhad0/sdk');                      ║
+║  const client = new Zhad0Client();                                   ║
+║                                                                      ║
+║  await client.submitIntent({                                         ║
+║    action:   'SWAP',                                                 ║
+║    tokenIn:  '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',          ║
+║    tokenOut: '0x4200000000000000000000000000000000000006',           ║
+║    amountIn: '1000000000',                                           ║
+║  });                                                                 ║
+║                                                                      ║
+║  ▸ encrypted : aes-256-gcm                                           ║
+║  ▸ intent    : 0x7f3a9c2b1e84d06f...                                 ║
+║  ▸ status    : SIMULATED_OK                                          ║
+║  ▸ relay     : 12ms                                                  ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
-```bash
-zhad0@protocol:~$ █
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  cat stack.json                                  ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  {                                                                   ║
+║    "language"  : "TypeScript",                                       ║
+║    "crypto"    : [ "AES-256-GCM", "RISC Zero", "SHA-256" ],         ║
+║    "chain"     : "Base L2 — chain 8453",                             ║
+║    "frontend"  : [ "React 18", "Vite", "Wagmi", "shadcn/ui" ],      ║
+║    "backend"   : [ "Express 5", "Drizzle ORM", "PostgreSQL" ],      ║
+║    "agents"    : [ "ElizaOS", "Virtuals", "Coinbase AgentKit" ]      ║
+║  }                                                                   ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  zhad0@protocol ~ $  curl zhad0.io                                   ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  → https://zhad0.io                      [200 OK]                   ║
+║                                                                      ║
+║  ╔════════════════════════════════════╗                              ║
+║  ║  ZHAD0 Protocol                    ║                              ║
+║  ║  privacy layer for AI agents       ║                              ║
+║  ║  on Base L2                        ║                              ║
+║  ╚════════════════════════════════════╝                              ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+```
+  zhad0@protocol ~ $  █
 ```
 
 ---
@@ -145,5 +177,6 @@ zhad0@protocol:~$ █
 
 [![Base](https://img.shields.io/badge/Base_L2-0052FF?style=flat-square&logo=coinbase&logoColor=white)](https://base.org)
 [![License](https://img.shields.io/badge/license-MIT-00d26a?style=flat-square)](https://github.com/zhad0/zhad0-sdk/blob/main/LICENSE)
+[![zhad0.io](https://img.shields.io/badge/zhad0.io-live-00d26a?style=flat-square)](https://zhad0.io)
 
 </div>
